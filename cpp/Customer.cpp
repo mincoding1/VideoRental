@@ -1,8 +1,8 @@
 #pragma once
 
 #include <vector>
-#include "Movie.cpp";
-#include "Rental.cpp";
+#include "Movie.cpp"
+#include "Rental.cpp"
 
 class Customer {
 
@@ -18,7 +18,7 @@ private:
     }
 
 public:
-    Customer(std::string& name) : name(name) {}
+    Customer(const std::string& name) : name(name) {}
 
     void addRental(Rental arg)
     {
