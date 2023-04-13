@@ -8,7 +8,7 @@ public:
 	static const int NEW_RELEASE = 1;
 	static const int REGULAR = 0;
 
-	Movie(std::string& title, int price_code)
+	Movie(const std::string& title, int price_code)
 		: title(title),
 		  priceCode(price_code)
 	{
