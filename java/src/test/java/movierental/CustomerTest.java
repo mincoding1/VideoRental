@@ -1,10 +1,8 @@
-package movierental;
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CustomerTest {
+class CustomerTest {
 
     @Test
     public void test() {
