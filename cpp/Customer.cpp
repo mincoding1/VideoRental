@@ -4,36 +4,38 @@
 #include "Movie.cpp"
 #include "Rental.cpp"
 
+using std::string;
+using std::vector;
 class Customer {
 
 private:
-    std::string name;
-    std::vector<Rental> rentals;
+    string name;
+    vector<Rental> rentals;
 
-    std::string to_string_with_short_precision(double tar)
+    string to_string_with_short_precision(double tar)
     {
         char buf[20] = { 0 };
         sprintf_s(buf, sizeof(buf), "%.1f", tar);
-        return std::string(buf);
+        return string(buf);
     }
 
 public:
-    Customer(const std::string& name) : name(name) {}
+    Customer(const string& name) : name(name) {}
 
     void addRental(Rental arg)
     {
         rentals.push_back(arg);
     }
 
-    std::string getName() {
+    string getName() {
         return name;
     }
 
-    std::string statement()
+    string statement()
     {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
-        std::string result = "Rental Record for " + getName() + "\n";
+        string result = "Rental Record for " + getName() + "\n";
 
         for (Rental each : rentals) {
             double thisAmount = 0;
