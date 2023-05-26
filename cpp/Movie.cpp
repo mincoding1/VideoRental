@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 
+using std::string;
+
 class Movie
 {
 public:
@@ -8,13 +10,13 @@ public:
 	static const int NEW_RELEASE = 1;
 	static const int REGULAR = 0;
 
-	Movie(const std::string& title, int price_code)
+	Movie(const string& title, int price_code)
 		: title(title),
-		  priceCode(price_code)
+		priceCode(price_code)
 	{
 	}
 
-	int getPriceCode() 
+	int getPriceCode()
 	{
 		return priceCode;
 	}
@@ -24,12 +26,12 @@ public:
 		priceCode = price_code;
 	}
 
-	std::string getTitle() 
+	string getTitle()
 	{
 		return title;
 	}
 
 private:
-	std::string title;
+	string title;
 	int priceCode;
 };
