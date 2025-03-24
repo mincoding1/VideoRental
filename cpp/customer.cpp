@@ -12,7 +12,7 @@ private:
     string roundDoubleToString(double tar) {
         char buf[20] = { 0 };
         sprintf_s(buf, sizeof(buf), "%.1f", tar);
-        return string(buf);
+        return string{ buf };
     }
 
 public:
