@@ -1,4 +1,4 @@
-#include "Movie.cpp";
+#include "movie.cpp";
 
 class Rental {
 public:
