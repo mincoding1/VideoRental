@@ -1,8 +1,10 @@
 #include <vector>
+#include <string>
 #include "movie.cpp"
 #include "rental.cpp"
 
 using std::vector;
+using std::string;
 
 class Customer {
 private:
