@@ -1,9 +1,5 @@
-#include "pch.h"
-#include "../Project12/Customer.cpp";
-#include "../Project12/Rental.cpp";
-#include "../Project12/Movie.cpp";
-
-using std::string;
+#include "gmock/gmock.h"
+#include "customer.cpp"
 
 TEST(TestCaseName, TestName) {
     Customer customer = Customer(string("Bob"));
