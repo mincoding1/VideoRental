@@ -1,7 +1,7 @@
 #include "gmock/gmock.h"
 #include "customer.cpp"
 
-TEST(TestCaseName, TestName) {
+TEST(CustomerTest, SampleTest) {
     Customer customer = Customer(string{ "Bob" });
 
     customer.addRental(Rental{ Movie{ string{ "Jaws" }, Movie::REGULAR }, 2 });
