@@ -1,6 +1,6 @@
 #include <vector>
-#include "Movie.cpp"
-#include "Rental.cpp"
+#include "movie.cpp"
+#include "rental.cpp"
 
 using std::vector;
 
