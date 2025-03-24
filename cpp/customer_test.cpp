@@ -2,7 +2,7 @@
 #include "customer.cpp"
 
 TEST(CustomerTest, SampleTest) {
-    Customer customer = Customer(string{ "Bob" });
+    Customer customer{ string{ "Bob" } };
 
     customer.addRental(Rental{ Movie{ string{ "Jaws" }, Movie::REGULAR }, 2 });
     customer.addRental(Rental{ Movie{ string{ "Golden Eye" }, Movie::REGULAR }, 3 });
