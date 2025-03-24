@@ -1,22 +1,14 @@
-#pragma once
 #include "Movie.cpp";
 
-class Rental
-{
+class Rental {
 public:
-	Rental(Movie& movie, int days_rented)
-		: movie(movie),
-		daysRented(days_rented)
-	{
-	}
+	Rental(const Movie &movie, int days_rented) : movie{ movie }, daysRented{ days_rented } {	}
 
-	int getDaysRented()
-	{
+	int getDaysRented() const {
 		return daysRented;
 	}
 
-	Movie getMovie()
-	{
+ 	Movie getMovie() {
 		return movie;
 	}
 
