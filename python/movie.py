@@ -1,5 +1,5 @@
 class Movie:
-    CHILDRENS = 2
+    CHILDREN = 2
     NEW_RELEASE = 1
     REGULAR = 0
 
