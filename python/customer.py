@@ -24,7 +24,7 @@ class Customer:
                     this_amount += (each.get_days_rented() - 2) * 1.5
             elif each.get_movie().get_price_code() == Movie.NEW_RELEASE:
                 this_amount += each.get_days_rented() * 3
-            elif each.get_movie().get_price_code() == Movie.CHILDRENS:
+            elif each.get_movie().get_price_code() == Movie.CHILDREN:
                 this_amount += 1.5
                 if each.get_days_rented() > 3:
                     this_amount += (each.get_days_rented() - 3) * 1.5
