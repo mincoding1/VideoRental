@@ -8,8 +8,8 @@ TEST(CustomerTest, SampleTest) {
     customer.addRental(Rental{ Movie{ string{ "Golden Eye" }, Movie::REGULAR }, 3 });
     customer.addRental(Rental{ Movie{ string{ "Short New" }, Movie::NEW_RELEASE }, 1 });
     customer.addRental(Rental{ Movie{ string{ "Long New" }, Movie::NEW_RELEASE }, 2 });
-    customer.addRental(Rental{ Movie{ string{ "Bambi" }, Movie::CHILDRENS }, 3 });
-    customer.addRental(Rental{ Movie{ string{ "Toy Story" }, Movie::CHILDRENS }, 4 });
+    customer.addRental(Rental{ Movie{ string{ "Bambi" }, Movie::CHILDREN }, 3 });
+    customer.addRental(Rental{ Movie{ string{ "Toy Story" }, Movie::CHILDREN }, 4 });
 
     string expected = "" +
         string{ "Rental Record for Bob\n" } +
