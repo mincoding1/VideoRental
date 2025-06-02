@@ -5,7 +5,7 @@ using std::string;
 
 class Movie {
 public:
-	static const int CHILDRENS = 2;
+	static const int CHILDREN = 2;
 	static const int NEW_RELEASE = 1;
 	static const int REGULAR = 0;
 
