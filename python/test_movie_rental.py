@@ -7,8 +7,8 @@ def test_sample():
     customer.add_rental(Rental(Movie("Golden Eye", Movie.REGULAR), 3))
     customer.add_rental(Rental(Movie("Short New", Movie.NEW_RELEASE), 1))
     customer.add_rental(Rental(Movie("Long New", Movie.NEW_RELEASE), 2))
-    customer.add_rental(Rental(Movie("Bambi", Movie.CHILDRENS), 3))
-    customer.add_rental(Rental(Movie("Toy Story", Movie.CHILDRENS), 4))
+    customer.add_rental(Rental(Movie("Bambi", Movie.CHILDREN), 3))
+    customer.add_rental(Rental(Movie("Toy Story", Movie.CHILDREN), 4))
 
     expected = (
         "Rental Record for Bob\n"
